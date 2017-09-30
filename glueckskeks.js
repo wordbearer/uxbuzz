@@ -6,9 +6,9 @@ function getTerm() {
 
 	var terms, type, category, buzzwordDE, buzzwordEN, abbreviation, relatesTo, description, example, number;
 
-	// number = parseInt(getRandomInt(0,2));
-	// console.log(number);
-	number = 0;
+	number = parseInt(getRandomInt(0,2));
+	console.log(number);
+	// number = 0;
 
 	var oReq = new XMLHttpRequest();
 	oReq.open("get", "https://raw.githubusercontent.com/wordbearer/uxbuzz/master/terms.json", true); 
@@ -18,8 +18,21 @@ function getTerm() {
 	oReq.onload = function() {
 
   		terms=oReq.response;
-  		// console.log(terms);
-  		// console.log(terms.buzzwords[0].type);
+
+  		buzzwordEN = document.getElementById("term_buzzwordEN");
+		buzzwordEN.innerHTML = terms.buzzwords[number].buzzwordEN;
+
+		if (terms.buzzwords[number].buzzwordDE){
+			buzzwordDE = document.getElementById("term_buzzwordDE");
+			buzzwordDE.innerHTML = "(DE: "+terms.buzzwords[number].buzzwordDE+")";
+		}
+		else{
+			buzzwordDE = document.getElementById("term_buzzwordDE");
+			buzzwordDE.innerHTML = "";
+		}
+
+  		description = document.getElementById("term_description");
+		description.innerHTML = terms.buzzwords[number].description;
 
   		example = document.getElementById("term_example");
 		example.innerHTML = terms.buzzwords[number].example;

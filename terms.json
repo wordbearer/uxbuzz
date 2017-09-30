@@ -8,7 +8,7 @@
 			"category": "Design",
 			"type": "Prinzip",
 			"relatesTo": null,
-			"description": "Die \"3 Click Rule\" / \"3 Klick Regel\" ist eine Theorie, die besagt, dass ein Nutzer nach drei Klicks die Website verlässt, sollte er dann nicht auf der Seite gelandet sein, auf der er landen wollte.",
+			"description": "Die \"3 Click Rule\" ist eine Theorie, die besagt, dass ein Nutzer nach drei Klicks die Website verlässt, sollte er dann nicht auf der Seite gelandet sein, auf der er landen wollte.",
 			"example": "\"Die wichtigen Informationen sind in der Seitenhierarchie so tief vergraben, dass die Nutzer - gemäß der <b>Drei Klick Regel</b> - die Seite verlassen, bevor sie die Informationen gefunden haben\""
 		},
 		{
@@ -19,7 +19,7 @@
 			"category": "Design",
 			"type": "Prinzip",
 			"relatesTo": null,
-			"description": "Above the Fold beschreibt den Teil einer Website, der für den User ohne Scrollen zu sehen ist.",
+			"description": "\"Above the Fold\" beschreibt den Teil einer Website, der für den User ohne Scrollen zu sehen ist.",
 			"example": "\"Warum ist denn der CTA nicht <b>Above the Fold</b>?! Soll da etwa niemand drauf klicken?!\""
 		},
 		{
@@ -30,7 +30,7 @@
 			"category": "Kreativität",
 			"type": "Methode",
 			"relatesTo": null,
-			"description": "Brainstorming ist eine Kreativitätstechnik die auf Assoziationsbildung beruht. Wichtig ist, dass die Ideen während des Sammelns von den Teilnehmern nicht kommentiert, korrigiert oder kritisiert werden.",
+			"description": "\"Brainstorming\" ist eine Kreativitätstechnik die auf Assoziationsbildung beruht. Wichtig ist, dass die Ideen während des Brainstormings Ideen von den Teilnehmern nicht kommentiert, korrigiert oder kritisiert werden.",
 			"example": "\"Wir haben im <b>Brainstorming</b> sehr viele Ideen generieren können. Danach haben wir die verrücktesten Ideen weiter ausgearbeitet.\""
 		}
 	]
