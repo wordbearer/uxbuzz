@@ -35,24 +35,13 @@
 	padding-right: 1em;
 }
 
-/* Hier folgen ein paar Besonderheiten für den Btn */
-
-#rndck{
-	height: 150pt;
-}
-
-#nxtck{
-	margin-top: 4.7em;
-}
-
 /* Hier folgen die Klassen der Spaltenbreiten */
 
 /* Small */
 @media screen and (max-width:600px) {
   .small-1 {width: 100%;}
-  .nextcookie {height: 60px; width: 100%;}
-  #rndck {height: 60px;}
-  #nxtck{margin-top: 2em;}
+  .nextcookie {height: 60px; width: 90%}
+  .randomcookie {height: 100%;}
 }
 
 /* Medium */
@@ -61,7 +50,7 @@
   .medium-2 {width:50%;}
   .medium-3 {width:75%;}
   .medium-4 {width:100%;}
-  .nextcookie {height: 100%; width: 100px;}
+  .nextcookie {height: 100%; width: 80px; margin-left: 3em;}
 }
 
 /* Large */
@@ -76,7 +65,7 @@
   .large-8 {width:80%;}
   .large-9 {width:90%;}
   .large-10 {width:100%;}
-  .nextcookie {height: 100%; width: 100px;}
+  .nextcookie {height: 100%; width: 80px; margin-left: 3em;}
 }
 
 /* body{
@@ -143,7 +132,11 @@ a:link, a:visited{
 }
 
 .nextcookie{
-  	float:right;
+	/*margin-top: 1em;*/
+	/*position: absolute;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;*/
 }
 
 .randomcookie{
@@ -151,15 +144,19 @@ a:link, a:visited{
 	border-radius: 12px; */
 	background-color: #d8e9ef;
 	color: #f7a035;
+	height: 70%;
 	width: 100%;
+	/*padding-left: 20px;
+	padding-right: 20px;*/
 	line-height: 2;
 	text-align: center;
 	font-size: 16pt;
-	display: flex;
-  	align-items: center;
-  	justify-content: center;
+	/*display: flex;*/
+  	/*align-items: center;*/
+  	/*justify-content: center;*/
   	-webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
+    float: right;
 }
 
 .randomcookie:hover {
