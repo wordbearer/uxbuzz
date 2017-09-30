@@ -24,11 +24,20 @@ function getTerm() {
 
 		if (terms.buzzwords[number].buzzwordDE){
 			buzzwordDE = document.getElementById("term_buzzwordDE");
-			buzzwordDE.innerHTML = "(DE: "+terms.buzzwords[number].buzzwordDE+")";
+			buzzwordDE.innerHTML = "/ "+terms.buzzwords[number].buzzwordDE+")";
 		}
 		else{
 			buzzwordDE = document.getElementById("term_buzzwordDE");
 			buzzwordDE.innerHTML = "";
+		}
+
+		if (terms.buzzwords[number].abbreviation){
+			abbreviation = document.getElementById("term_abbreviation");
+			abbreviation.innerHTML = "("+terms.buzzwords[number].abbreviation+")";
+		}
+		else{
+			abbreviation = document.getElementById("term_abbreviation");
+			abbreviation.innerHTML = "";
 		}
 
   		description = document.getElementById("term_description");
@@ -45,11 +54,13 @@ function getTerm() {
 
 	}
 
-
-	// var number;
-	// number = document.getElementById("term_type");
-	// number.innerHTML = getRandomInt(1,3);
 }
 
-var newCookie  = document.getElementById('newcookie');
-newCookie.addEventListener ('click', getTerm, true);	
+var newCookie  = document.getElementsByClassName('newcookie');
+
+var i;
+for (i = 0; i < newCookie.length; i++) {
+    newCookie[i].addEventListener ('click', getTerm, true);	
+}
+
+// newCookie.addEventListener ('click', getTerm, true);	
