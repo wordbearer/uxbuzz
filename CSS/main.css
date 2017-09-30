@@ -203,12 +203,14 @@ a:link, a:visited{
 
 #buzzword{
 	opacity: 0;
-	transition: opacity 1000ms;
+	transition: opacity 1000ms ease-in-out;
 }
 
 #buzzword.show {
 	opacity: 1;
 }
+
+.w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
 
 /*#term_buzzwordEN, #term_buzzwordDE, #term_abbreviation, #term_description, #term_example, #term_type, #term_category, .Bsp, .buzz_meta {
 	opacity: 0;

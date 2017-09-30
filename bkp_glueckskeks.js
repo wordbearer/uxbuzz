@@ -2,18 +2,18 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// function unfade(element) {
-//     var op = 0.1;  // initial opacity
-//     element.style.display = 'block';
-//     var timer = setInterval(function () {
-//         if (op >= 1){
-//             clearInterval(timer);
-//         }
-//         element.style.opacity = op;
-//         element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-//         op += op * 0.1;
-//     }, 25);
-// }
+function unfade(element) {
+    var op = 0.1;  // initial opacity
+    element.style.display = 'block';
+    var timer = setInterval(function () {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op += op * 0.1;
+    }, 10);
+}
 
 var terms, section;
 
@@ -38,42 +38,39 @@ function getTerm() {
 	// console.log(number);
 
 	buzzwordEN = document.getElementById("term_buzzwordEN");
-	description = document.getElementById("term_description");
-	example = document.getElementById("term_example");
-	type = document.getElementById("term_type");
-	category = document.getElementById("term_category");
-	buzzwordDE = document.getElementById("term_buzzwordDE");
-	abbreviation = document.getElementById("term_abbreviation");
-
-	// buzzwordDE.innerHTML = "";
-	// abbreviation.innerHTML = "";
-	// buzzwordEN.innerHTML = "";
-	// description.innerHTML = "";
-	// example.innerHTML = "";
-	// type.innerHTML = "";
-	// category.innerHTML = "";
+	buzzwordEN.innerHTML = terms.buzzwords[number].buzzwordEN;
 
 	if (terms.buzzwords[number].buzzwordDE){
+		buzzwordDE = document.getElementById("term_buzzwordDE");
 		buzzwordDE.innerHTML = "/ "+terms.buzzwords[number].buzzwordDE;
 	}
 	else{
+		buzzwordDE = document.getElementById("term_buzzwordDE");
 		buzzwordDE.innerHTML = "";
 	}
 
 	if (terms.buzzwords[number].abbreviation){
+		abbreviation = document.getElementById("term_abbreviation");
 		abbreviation.innerHTML = "("+terms.buzzwords[number].abbreviation+")";
 	}
 	else{
+		abbreviation = document.getElementById("term_abbreviation");
 		abbreviation.innerHTML = "";
 	}
 
-	buzzwordEN.innerHTML = terms.buzzwords[number].buzzwordEN;
+	description = document.getElementById("term_description");
 	description.innerHTML = terms.buzzwords[number].description;
+
+	example = document.getElementById("term_example");
 	example.innerHTML = terms.buzzwords[number].example;
+
+	type = document.getElementById("term_type");
 	type.innerHTML = terms.buzzwords[number].type;
+
+	category = document.getElementById("term_category");
 	category.innerHTML = terms.buzzwords[number].category;
 
-	section.classList.add('show');
+	unfade(section);
 
 }
 
