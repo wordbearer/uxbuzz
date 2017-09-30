@@ -32,6 +32,17 @@
 			"relatesTo": null,
 			"description": "\"Brainstorming\" ist eine Kreativitätstechnik die auf Assoziationsbildung beruht. Wichtig ist, dass die Ideen während des Brainstormings Ideen von den Teilnehmern nicht kommentiert, korrigiert oder kritisiert werden.",
 			"example": "\"Wir haben im <b>Brainstorming</b> sehr viele Ideen generieren können. Danach haben wir die verrücktesten Ideen weiter ausgearbeitet.\""
+		},
+		{
+			"id": "3",
+			"buzzwordEN": "Responsive Web Design",
+			"buzzwordDE": null,
+			"abbreviation": "RWD",
+			"category": "Strategie",
+			"type": "Paradigma",
+			"relatesTo": null,
+			"description": "\"Responsive Web Design\" ist ein Paradigma zur Erstellung von Websites. Gemeinhin ist damit gemeint, dass die Website auf die Eigenheiten des vom Nutzer benutzten Endgeräts reagieren können soll (also flexibel ist). Allerdings gehören auch Dinge wie Retina-Optimierung, Mobile First, Performance-Optimierung, Touch-Screen-Design, etc. dazu.",
+			"example": "\"Um unseren Kunden eine bestmögliche Experience zu bieten, sollte unsere Website <b>Responsive</b> sein. Dafür müssen wir allerdings auch entsprechend gestalten.\""
 		}
 	]
 }

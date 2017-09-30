@@ -6,7 +6,7 @@ function getTerm() {
 
 	var terms, type, category, buzzwordDE, buzzwordEN, abbreviation, relatesTo, description, example, number;
 
-	number = parseInt(getRandomInt(0,2));
+	number = parseInt(getRandomInt(0,3));
 	console.log(number);
 	// number = 0;
 
