@@ -2,7 +2,23 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function unfade(element) {
+    var op = 0.1;  // initial opacity
+    element.style.display = 'block';
+    var timer = setInterval(function () {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op += op * 0.1;
+    }, 10);
+}
+
 function getTerm() {
+
+	var section = document.querySelector("#buzzword");
+	// section.classList.remove('show');
 
 	var terms, type, category, buzzwordDE, buzzwordEN, abbreviation, relatesTo, description, example, number;
 
@@ -51,6 +67,10 @@ function getTerm() {
 
 		category = document.getElementById("term_category");
 		category.innerHTML = terms.buzzwords[number].category;
+
+		unfade(section);
+
+		// section.classList.add('show');
 
 	}
 

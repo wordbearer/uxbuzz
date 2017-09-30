@@ -193,35 +193,29 @@ a:link, a:visited{
 }
 
 .link-spanner{
-  position:absolute; 
-  width:100%;
-  height:100%;
-  top:0;
-  left: 0;
+	position:absolute; 
+	width:100%;
+	height:100%;
+	top:0;
+	left: 0;
 
-  z-index: 1;
+	z-index: 1;
 }
 
-
-@-webkit-keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
+#buzzword{
+	opacity: 0;
+	transition: opacity 1000ms;
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
+#buzzword.show {
+	opacity: 1;
 }
 
-.fade-in {
-    -webkit-animation: fadeIn .5s ease-in 1 forwards;
-  animation: fadeIn .5s ease-in 1 forwards;
-  opacity: 0;
+/*#term_buzzwordEN, #term_buzzwordDE, #term_abbreviation, #term_description, #term_example, #term_type, #term_category, .Bsp, .buzz_meta {
+	opacity: 0;
+	transition: opacity 1000ms;
 }
 
-.is-paused {
-    -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
+.show {
+	opacity: 1;
+}*/
