@@ -24,7 +24,7 @@ function getTerm() {
 
 		if (terms.buzzwords[number].buzzwordDE){
 			buzzwordDE = document.getElementById("term_buzzwordDE");
-			buzzwordDE.innerHTML = "/ "+terms.buzzwords[number].buzzwordDE+")";
+			buzzwordDE.innerHTML = "/ "+terms.buzzwords[number].buzzwordDE;
 		}
 		else{
 			buzzwordDE = document.getElementById("term_buzzwordDE");
@@ -63,4 +63,4 @@ for (i = 0; i < newCookie.length; i++) {
     newCookie[i].addEventListener ('click', getTerm, true);	
 }
 
-// newCookie.addEventListener ('click', getTerm, true);	
+window.addEventListener('load', getTerm);
