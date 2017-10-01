@@ -1,3 +1,5 @@
+var terms, section;
+
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -15,8 +17,6 @@ function getRandomInt(min, max) {
 //     }, 25);
 // }
 
-var terms, section;
-
 function init() {
 	section = document.querySelector("#buzzword");
 	var oReq = new XMLHttpRequest();
@@ -27,10 +27,11 @@ function init() {
 	oReq.onload = function() {
   		terms=oReq.response;
   		getTerm();
+  		section.classList.add('show');
   	}
 }
 
-function getTerm() {
+function getTerm(e) {
 
 	var type, category, buzzwordDE, buzzwordEN, abbreviation, relatesTo, description, example, number;
 
@@ -44,14 +45,6 @@ function getTerm() {
 	category = document.getElementById("term_category");
 	buzzwordDE = document.getElementById("term_buzzwordDE");
 	abbreviation = document.getElementById("term_abbreviation");
-
-	// buzzwordDE.innerHTML = "";
-	// abbreviation.innerHTML = "";
-	// buzzwordEN.innerHTML = "";
-	// description.innerHTML = "";
-	// example.innerHTML = "";
-	// type.innerHTML = "";
-	// category.innerHTML = "";
 
 	if (terms.buzzwords[number].buzzwordDE){
 		buzzwordDE.innerHTML = "/ "+terms.buzzwords[number].buzzwordDE;
@@ -73,7 +66,7 @@ function getTerm() {
 	type.innerHTML = terms.buzzwords[number].type;
 	category.innerHTML = terms.buzzwords[number].category;
 
-	section.classList.add('show');
+	// unfade(section);
 
 }
 
