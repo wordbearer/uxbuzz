@@ -7,21 +7,21 @@
 }
 
 html {
-  height: 100%;
-  box-sizing: border-box;
+	height: 100%;
+	box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 body {
-  position: relative;
-  margin: 0;
-  padding-bottom: 6rem;
-  min-height: 100%;
+	position: relative;
+	margin: 0;
+	padding-bottom: 6rem;
+	min-height: 100%;
 }
 
 .row {
@@ -57,7 +57,7 @@ body {
 /* Hier folgen ein paar Besonderheiten für den Btn */
 
 #rndck{
-	height: 150pt;
+	height: 100pt;
 	font-size: 28pt;
 }
 
