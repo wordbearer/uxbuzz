@@ -58,6 +58,7 @@ body {
 
 #rndck{
 	height: 150pt;
+	font-size: 28pt;
 }
 
 #nxtck{
@@ -70,8 +71,9 @@ body {
 @media screen and (max-width:600px) {
   .small-1 {width: 100%;}
   .nextcookie {height: 60px; width: 100%;}
-  #rndck {height: 60px;}
+  #rndck {height: 60px; font-size: 16pt;}
   #nxtck{margin-top: 2em;}
+  #medbig{display: none;}
 }
 
 /* Medium */
@@ -81,6 +83,7 @@ body {
   .medium-3 {width:75%;}
   .medium-4 {width:100%;}
   .nextcookie {height: 100%; width: 100px;}
+  #small{display: none;}
 }
 
 /* Large */
@@ -96,6 +99,7 @@ body {
   .large-9 {width:90%;}
   .large-10 {width:100%;}
   .nextcookie {height: 100%; width: 100px;}
+  #small{display: none;}
 }
 
 /* body{
@@ -174,7 +178,7 @@ a:link, a:visited{
 	width: 100%;
 	line-height: 2;
 	text-align: center;
-	font-size: 16pt;
+	/*font-size: 16pt;*/
 	display: flex;
   	align-items: center;
   	justify-content: center;
