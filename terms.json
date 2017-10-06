@@ -1,7 +1,7 @@
 {
 	"buzzwords": [
 		{
-			"id": "0",
+			"id": 0,
 			"buzzwordEN": "3 Click Rule",
 			"buzzwordDE": "3 Klick Regel",
 			"abbreviation": null,
@@ -12,7 +12,7 @@
 			"example": "\"Die wichtigen Informationen sind in der Seitenhierarchie so tief vergraben, dass die Nutzer - gemäß der <b>Drei Klick Regel</b> - die Seite verlassen, bevor sie die Informationen gefunden haben\""
 		},
 		{
-			"id": "1",
+			"id": 1,
 			"buzzwordEN": "Above the Fold",
 			"buzzwordDE": null,
 			"abbreviation": null,
@@ -23,7 +23,7 @@
 			"example": "\"Warum ist denn der CTA nicht <b>Above the Fold</b>?! Soll da etwa niemand drauf klicken?!\""
 		},
 		{
-			"id": "2",
+			"id": 2,
 			"buzzwordEN": "Brainstorming",
 			"buzzwordDE": null,
 			"abbreviation": null,
@@ -34,7 +34,7 @@
 			"example": "\"Wir haben im <b>Brainstorming</b> sehr viele Ideen generieren können. Danach haben wir die verrücktesten Ideen weiter ausgearbeitet.\""
 		},
 		{
-			"id": "3",
+			"id": 3,
 			"buzzwordEN": "Responsive Web Design",
 			"buzzwordDE": null,
 			"abbreviation": "RWD",
