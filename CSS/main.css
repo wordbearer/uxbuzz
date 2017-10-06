@@ -215,13 +215,11 @@ a:link, a:visited{
 	bottom: 0;
 	left: 0;
 	padding: 1rem;
-/*	font-size: 14pt;*/
 	text-align: right;
 }
 
 #twitter{
 	height: 20px;
-	/*padding-top: 5px;*/
 	margin-bottom: -5px;
 }
 
