@@ -219,6 +219,12 @@ a:link, a:visited{
 	text-align: right;
 }
 
+#twitter{
+	height: 20px;
+	/*padding-top: 5px;*/
+	margin-bottom: -5px;
+}
+
 /* Content Animation */
 
 #buzzword{
