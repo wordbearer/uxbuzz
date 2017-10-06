@@ -65,17 +65,35 @@ body {
 	margin-top: 4.7em;
 }
 
+h2{
+	font-size: 20pt;
+}
+
+p, h3, h4{
+	font-size: 16pt;
+}
+
+.footer, .buzz-meta-box {
+	font-size: 14pt;
+}
+
 /* Hier folgen die Klassen der Spaltenbreiten */
 
 /* Small */
 @media screen and (max-width:600px) {
 	.small-1 {width: 100%;}
 	.nextcookie {height: 60px; width: 100%;}
-	#rndck {height: 60px; font-size: 16pt;}
+	#rndck {height: 60px; font-size: 1.3em;}
 	#nxtck{margin-top: 2em;}
 	#medbig{display: none;}
-	#keks{height: 150px;}
-	.head h1{position: absolute; bottom: 23px; left: 130px;}
+	#keks{height: 100px;}
+	.head h1{position: absolute; bottom: 12px; left: 90px;}
+	h1 {font-size: 1.5em;}
+	h2 {font-size: 1.5em;}
+	h3 {font-size: 1.3em;}
+	p {font-size: 1.3em;}
+	.buzz-meta-box {font-size: 1.0em;}
+	.footer{font-size: 1.0em;}
 }
 
 /* Medium */
@@ -84,10 +102,18 @@ body {
 	.medium-2 {width:50%;}
 	.medium-3 {width:75%;}
 	.medium-4 {width:100%;}
-	.nextcookie {height: 100%; width: 100px;}
-	#small{display: none;}
-	#keks{height: 150px;}
-	.head h1{position: absolute; bottom: 23px; left: 130px;}
+	.nextcookie {height: 60px; width: 100%;}
+	#rndck {height: 60px; font-size: 1.3em;}
+	#nxtck{margin-top: 2em;}
+	#medbig{display: none;}
+	#keks{height: 100px;}
+	.head h1{position: absolute; bottom: 12px; left: 90px;}
+	h1 {font-size: 1.5em;}
+	h2 {font-size: 1.5em;}
+	h3 {font-size: 1.3em;}
+	h4, p {font-size: 1.3em;}
+	.buzz-meta-box{font-size: 1.0em;}
+	.footer{font-size: 1.0em;}
 }
 
 /* Large */
@@ -104,8 +130,9 @@ body {
 	.large-10 {width:100%;}
 	.nextcookie {height: 100%; width: 100px;}
 	#small{display: none;}
-	#keks{height: 200px;}
-	.head h1{position: absolute; bottom: 45px; left: 170px;}
+	#keks{height: 150px;}
+	.head h1{position: absolute; bottom: 23px; left: 130px;}
+	.footer{font-size: 1.0em;}
 }
 
 /* body{
@@ -115,7 +142,7 @@ body {
 /* head */
 .head{
 	position: relative;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 .head h1{
@@ -129,24 +156,11 @@ body {
 /* Main part */
 
 .main{
-	margin-top: 10px;
 	padding-bottom: 20px;
-}
-
-h2{
-	font-size: 20pt;
 }
 
 h3{
 	margin-top: 20px;
-}
-
-h4, p{
-	font-size: 16pt;
-}
-
-h4{
-	margin-bottom: -10px;
 }
 
 a:link, a:visited{
@@ -167,7 +181,6 @@ a:link, a:visited{
 .buzz_meta{
 	display: inline;
 	color: grey;
-	font-size: 14pt;
 }
 
 .nextcookie{
@@ -202,7 +215,7 @@ a:link, a:visited{
 	bottom: 0;
 	left: 0;
 	padding: 1rem;
-	font-size: 14pt;
+/*	font-size: 14pt;*/
 	text-align: right;
 }
 
