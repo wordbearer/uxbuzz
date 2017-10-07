@@ -35,7 +35,7 @@ function getTerm(e) {
 
 	var type, category, buzzwordDE, buzzwordEN, abbreviation, relatesTo, description, example, number;
 
-	number = parseInt(getRandomInt(0,3));
+	number = parseInt(getRandomInt(0,terms.buzzwords.length-1));
 	// console.log(number);
 
 	buzzwordEN = document.getElementById("term_buzzwordEN");
